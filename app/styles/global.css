@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid black;
+}
+.header1 {
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 2.5rem;
+}
+
+.header2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 1.4rem;
+}
+
+.gutter {
+  margin: 0 auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  max-width: 1500px;
+}
+
+.offer {
+  display: flex;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.video-header {
+  width: 1fr;
+  max-height: 100px;
+}
+
+.text-container {
+  width: 1fr;
+  margin: 0 auto;
+  padding-left: 8px;
+  max-width: 1500px;
+}
+
+body {
+  margin: 0px 0px;
+}
