@@ -14,7 +14,7 @@ export default function Index() {
           <h1 className="header1">MACRO</h1>
           <h1 className="header2">Photo Service</h1>
         </div>
-        <video className="video-header" autoPlay loop>
+        <video className="video-header" muted playsInline autoPlay loop>
           <source src="/banner-take-test-6_1.mp4" type="video/mp4" />
         </video>
       </div>

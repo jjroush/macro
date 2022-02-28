@@ -25,6 +25,7 @@
 
 .offer {
   display: flex;
+  justify-content: space-between;
 }
 
 .price {
