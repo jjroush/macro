@@ -9,13 +9,17 @@ import {
 import type { MetaFunction } from "remix";
 
 import styles from "~/styles/global.css";
+import galleryStyle from "~/styles/image-gallery.css";
 
 export const meta: MetaFunction = () => {
   return { title: "Macro Product Photos" };
 };
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: galleryStyle },
+  ];
 }
 
 export default function App() {
