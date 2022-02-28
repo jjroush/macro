@@ -1,9 +1,30 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import ImageGallery from "react-image-gallery";
+const images = [
+  {
+    original: "https://picsum.photos/id/1018/1000/600/",
+    thumbnail: "https://picsum.photos/id/1018/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1015/1000/600/",
+    thumbnail: "https://picsum.photos/id/1015/250/150/",
+  },
+  {
+    original: "https://picsum.photos/id/1019/1000/600/",
+    thumbnail: "https://picsum.photos/id/1019/250/150/",
+  },
+];
 
 export default function Index() {
+  const onEmailCopyClick = () => {
+    navigator.clipboard.writeText("macro@roush.io");
+    setIsCopied(true);
+  };
   useEffect(() => {
     console.log(navigator.userAgent);
   });
+
+  const [isCopied, setIsCopied] = useState<Boolean>(false);
   return (
     <>
       <div className="header">
@@ -22,8 +43,8 @@ export default function Index() {
         className="gutter"
         style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
       >
-        <p>Macro photography in simple terms; makes small things big.</p>
-        <p>Show off the quality or fine details </p>
+        <h3>Macro photography in simple terms; makes small things big.</h3>
+        <ImageGallery showPlayButton={false} items={images} lazyload={true} />
         <p></p>
         <h2>Why pay a professional?</h2>
         <p>
@@ -34,22 +55,27 @@ export default function Index() {
         </p>
         <h2>Who am I?</h2>
         <p>
-          Hello, I'm Jacob. By day I am a software engineer based out of Des
+          Hello, I'm Jacob 👋. By day I am a software engineer based out of Des
           Moines, Iowa and when I'm not at work; I'm attempting to recoup the
           cost of my expensive taste in camera equipment.
         </p>
         <div className="offer">
-          <p className="price">$100</p>
+          <div>
+            <i className={"starting"}>Starting at</i>
+            <p className="price">$120</p>
+          </div>
           <p>
             Basic session price with 5 photos and post-production digitally
             delivered.
           </p>
         </div>
         <h2>How do I get in touch?</h2>
-        Reach out to me via: <a href="mailto:macro@roush.io">
+        Reach out to me via: <a href="mailto:macr@ush.io">
           macro@roush.io
         </a>{" "}
-        <div onClick={() => console.log("test")}>📋</div>
+        <button title={"copy"} onClick={() => onEmailCopyClick()}>
+          {isCopied ? "✅" : "📋"}
+        </button>
       </div>
     </>
   );
