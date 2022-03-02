@@ -2,16 +2,20 @@ import { useEffect, useState } from "react";
 import ImageGallery from "react-image-gallery";
 const images = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: "https://roush-image.s3.amazonaws.com/macro/pencil.jpg",
+    thumbnail: "https://roush-image.s3.amazonaws.com/macro/pencil_thumb.jpg",
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: "https://roush-image.s3.amazonaws.com/macro/quarter.jpg",
+    thumbnail: "https://roush-image.s3.amazonaws.com/macro/quarter_thumb.jpg",
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: "https://roush-image.s3.amazonaws.com/macro/watch.jpg",
+    thumbnail: "https://roush-image.s3.amazonaws.com/macro/watch_thumb.jpg",
+  },
+  {
+    original: "https://roush-image.s3.amazonaws.com/macro/buck.jpg",
+    thumbnail: "https://roush-image.s3.amazonaws.com/macro/buck_thumb.jpg",
   },
 ];
 
