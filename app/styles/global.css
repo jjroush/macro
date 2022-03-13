@@ -35,8 +35,13 @@
 }
 
 .video-header {
-  width: 1fr;
-  max-height: 100px;
+  height: 100vh;
+  width: 100vw;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
 }
 
 .text-container {
@@ -52,4 +57,17 @@ body {
 
 .starting {
   color: rgb(200, 203, 206);
+}
+
+.video-container {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  bottom: 15%;
+  left: 30px;
+  width: 35%;
 }
