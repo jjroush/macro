@@ -31,18 +31,19 @@ export default function Index() {
   const [isCopied, setIsCopied] = useState<Boolean>(false);
   return (
     <>
+      <div className="mobile-header-container">
+        <img className="logo-mobile" src="/macro-logo.svg"></img>
+      </div>
       <div className="video-container">
         <video className="video-header" muted playsInline autoPlay loop>
           <source src="/desktop-header-3mg.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="header">
-        <div
-          style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
-          className="text-container"
-        >
-          <img className="logo" src="/macro-logo.svg"></img>
-        </div>
+      <div
+        style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
+        className="text-container"
+      >
+        <img className="logo" src="/macro-logo.svg"></img>
       </div>
       <div
         className="gutter"

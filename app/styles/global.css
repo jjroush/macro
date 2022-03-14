@@ -35,13 +35,13 @@
 }
 
 .video-header {
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   top: 0;
   left: 0;
   z-index: -2;
   object-fit: cover;
-  filter: brightness(1.35);
+  filter: brightness(1.8);
 }
 
 .logo {
@@ -54,12 +54,18 @@
   filter: drop-shadow(4px 4px 8px rgb(0, 0, 0));
 }
 
+.mobile-header-container {
+  display: none;
+}
+
 @media only screen and (max-width: 500px) {
   .video-header {
-    object-position: bottom right;
+    object-position: top right;
+    height: 70vh;
   }
   .logo {
-    position: absolute;
+    display: none;
+    /* position: absolute;
     left: 0;
     top: 10px;
     margin-left: auto;
@@ -68,7 +74,18 @@
     -webkit-filter: drop-shadow(4px 4px 8px rgb(255, 255, 255)) brightness(0)
       saturate(100%);
     filter: brightness(0) saturate(100%)
-      drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.767));
+      drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.767)); */
+  }
+
+  .logo-mobile {
+    margin-top: -35px;
+  }
+
+  .mobile-header-container {
+    display: block;
+    height: 25vh;
+    top: 0;
+    left: 0;
   }
 }
 
