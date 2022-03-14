@@ -41,7 +41,7 @@ export default function Index() {
           style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
           className="text-container"
         >
-          <img className="logo" src="Macro_logo.svg"></img>
+          <img className="logo" src="/macro-logo.svg"></img>
         </div>
       </div>
       <div
