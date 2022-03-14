@@ -48,7 +48,14 @@ export default function Index() {
         className="gutter"
         style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
       >
-        <h3>Macro photography in simple terms; makes small things big.</h3>
+        <div className="text-block">
+          <h3 className="preheader">Making your products</h3>
+          <h1 className="header">Larger than Life</h1>
+          <h3 className="speil">
+            Macro photography can take your product to the next level by
+            showcasing details that would otherwise go unnoticed.
+          </h3>
+        </div>
         <ImageGallery showPlayButton={false} items={images} lazyload={true} />
         <p></p>
         <h2>Why pay a professional?</h2>
@@ -58,12 +65,16 @@ export default function Index() {
           enough but professional equipment can take your product to the next
           level and show the ornateness of your product..
         </p>
-        <h2>Who am I?</h2>
-        <p>
-          Hello, I'm Jacob 👋. By day I am a software engineer based out of Des
-          Moines, Iowa and when I'm not at work; I'm attempting to recoup the
-          cost of my expensive taste in camera equipment.
-        </p>
+        <div className="text-block">
+          <h3 className="preheader">Who am I?</h3>
+          <h1 className="header">Meet the Photographer</h1>
+          <h3 className="speil">
+            Hello, I'm Jacob 👋. By day I am a software engineer based out of
+            Des Moines, Iowa and when I'm not at work; I'm attempting to recoup
+            the cost of my expensive taste in camera equipment.
+          </h3>
+        </div>
+        <p></p>
         <div className="offer">
           <div>
             <i className={"starting"}>Starting at</i>

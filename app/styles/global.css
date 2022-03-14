@@ -95,3 +95,19 @@ body {
   color: white;
   background-color: black;
 }
+
+.preheader {
+  color: #707070;
+  text-transform: uppercase;
+}
+
+.speil {
+  color: #707070;
+}
+
+.text-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
