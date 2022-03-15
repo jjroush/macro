@@ -1,12 +1,39 @@
 .header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 5px solid black;
   color: white;
   font: normal normal 300 60px/70px Bicyclette;
   letter-spacing: 0px;
   margin-top: 0;
   margin-bottom: 59px;
+}
+
+.about-group {
+  display: flex;
+  border-bottom: dotted #707070;
+  border-top: dotted #707070;
+}
+
+.about-group-center {
+  border-left: dotted #707070;
+  border-right: dotted #707070;
+}
+
+@media only screen and (max-width: 450px) {
+  .about-group {
+    flex-direction: column;
+  }
+
+  .about-group-center {
+    border-top: dotted #707070;
+    border-bottom: dotted #707070;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.about-group div {
+  padding: 15px;
 }
 
 .header1 {
@@ -71,16 +98,6 @@
   }
   .logo {
     display: none;
-    /* position: absolute;
-    left: 0;
-    top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    -webkit-filter: drop-shadow(4px 4px 8px rgb(255, 255, 255)) brightness(0)
-      saturate(100%);
-    filter: brightness(0) saturate(100%)
-      drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.767)); */
   }
 
   .logo-mobile {
@@ -156,4 +173,12 @@ a {
   letter-spacing: 5.1px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.key-info {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  background-color: #272727;
+  border-radius: 34px;
 }

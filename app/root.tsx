@@ -16,7 +16,12 @@ import galleryStyle from "~/styles/image-gallery.css";
 import { useEffect, useRef } from "react";
 
 export const meta: MetaFunction = () => {
-  return { title: "Macro Product Photos" };
+  return {
+    title: "Macro Product Photos",
+    description:
+      "Macro photography service makes your product larger than life. Let us help you capture the small details today. Based in Des Moines, IA.",
+    keywords: "macro photography, des moines, macro, photo studio, iowa",
+  };
 };
 
 export function links() {

@@ -23,6 +23,7 @@ export default function Index() {
   const onEmailCopyClick = () => {
     navigator.clipboard.writeText("macro@roush.io");
     setIsCopied(true);
+    window.fathom.trackGoal("VHOXAA9S", 0);
   };
   useEffect(() => {
     console.log(navigator.userAgent);
@@ -67,27 +68,39 @@ export default function Index() {
             the cost of my expensive taste in camera equipment.
           </p>
         </div>
-        <div className="text-block">
+        <div className="text-block key-info">
           <h3 className="preheader">The Nitty Gritty</h3>
           <h1 className="header">Let's Talk Details</h1>
           <p className="speil">
             Once I receive your shipped product; you should expect:
           </p>
-        </div>
-        <div className="offer">
-          <div>
-            <i className={"starting"}>Starting at</i>
-            <p className="price">$120</p>
+          <p className="speil">Once I receive the product you shipped to me:</p>
+          <div className="about-group">
+            <div className="about-item">
+              <h1>120</h1>
+              <p>dollars</p>
+            </div>
+            <div className="about-group-center">
+              <h1>5</h1>
+              <p>photos</p>
+            </div>
+            <div>
+              <h1>1</h1>
+              <p>week</p>
+            </div>
           </div>
-          <p>
-            Basic session price with 5 photos and post-production digitally
-            delivered.
+          <p className="speil">
+            A basic package includes 5 high-resolution photos and
+            post-production delivered to your inbox within 3 business days.
+          </p>
+          <p className="speil">
+            Each project has it's own needs. Wether you want video or more
+            images, I am happy to get you a quote.
           </p>
         </div>
         <div className="text-block">
           <h3 className="preheader">Let's Talk</h3>
           <h1 className="header">Reach out to me</h1>
-          <p className="speil">Once I receive the product you shipped to me:</p>
         </div>
         <a href="mailto:macro@roush.io">macro@roush.io</a>
         {"  "}
