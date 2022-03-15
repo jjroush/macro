@@ -58,14 +58,6 @@ export default function Index() {
           </p>
         </div>
         <ImageGallery showPlayButton={false} items={images} lazyload={true} />
-        <p></p>
-        <h2>Why pay a professional?</h2>
-        <p>
-          The phone in your pocket has replaced the need for a professional
-          camera in much of the day-to-day. For some macro shoots it is likely
-          enough but professional equipment can take your product to the next
-          level and show the ornateness of your product..
-        </p>
         <div className="text-block">
           <h3 className="preheader">Who am I?</h3>
           <h1 className="header">Meet the Photographer</h1>
@@ -75,7 +67,13 @@ export default function Index() {
             the cost of my expensive taste in camera equipment.
           </p>
         </div>
-        <p></p>
+        <div className="text-block">
+          <h3 className="preheader">The Nitty Gritty</h3>
+          <h1 className="header">Let's Talk Details</h1>
+          <p className="speil">
+            Once I receive your shipped product; you should expect:
+          </p>
+        </div>
         <div className="offer">
           <div>
             <i className={"starting"}>Starting at</i>
@@ -89,10 +87,10 @@ export default function Index() {
         <div className="text-block">
           <h3 className="preheader">Let's Talk</h3>
           <h1 className="header">Reach out to me</h1>
-          <div>
-            <a href="mailto:macr@ush.io">macro@roush.io</a>
-          </div>
+          <p className="speil">Once I receive the product you shipped to me:</p>
         </div>
+        <a href="mailto:macro@roush.io">macro@roush.io</a>
+        {"  "}
         <button title={"copy"} onClick={() => onEmailCopyClick()}>
           {isCopied ? "✅" : "📋"}
         </button>

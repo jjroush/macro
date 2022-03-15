@@ -149,3 +149,11 @@ body {
   font-family: Bicyclette;
   font: normal normal normal 36px/42px Bicyclette;
 }
+
+a {
+  color: #ec7734;
+  font: normal normal normal 30px/35px Bicyclette;
+  letter-spacing: 5.1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
