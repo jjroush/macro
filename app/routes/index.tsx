@@ -52,10 +52,10 @@ export default function Index() {
         <div className="text-block">
           <h3 className="preheader">Making your products</h3>
           <h1 className="header">Larger than Life</h1>
-          <h3 className="speil">
+          <p className="speil">
             Macro photography can take your product to the next level by
             showcasing details that would otherwise go unnoticed.
-          </h3>
+          </p>
         </div>
         <ImageGallery showPlayButton={false} items={images} lazyload={true} />
         <p></p>
@@ -69,11 +69,11 @@ export default function Index() {
         <div className="text-block">
           <h3 className="preheader">Who am I?</h3>
           <h1 className="header">Meet the Photographer</h1>
-          <h3 className="speil">
+          <p className="speil">
             Hello, I'm Jacob 👋. By day I am a software engineer based out of
             Des Moines, Iowa and when I'm not at work; I'm attempting to recoup
             the cost of my expensive taste in camera equipment.
-          </h3>
+          </p>
         </div>
         <p></p>
         <div className="offer">
@@ -86,10 +86,13 @@ export default function Index() {
             delivered.
           </p>
         </div>
-        <h2>How do I get in touch?</h2>
-        Reach out to me via: <a href="mailto:macr@ush.io">
-          macro@roush.io
-        </a>{" "}
+        <div className="text-block">
+          <h3 className="preheader">Let's Talk</h3>
+          <h1 className="header">Reach out to me</h1>
+          <div>
+            <a href="mailto:macr@ush.io">macro@roush.io</a>
+          </div>
+        </div>
         <button title={"copy"} onClick={() => onEmailCopyClick()}>
           {isCopied ? "✅" : "📋"}
         </button>

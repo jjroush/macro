@@ -23,6 +23,7 @@ export function links() {
   return [
     { rel: "stylesheet", href: styles },
     { rel: "stylesheet", href: galleryStyle },
+    { rel: "stylesheet", href: "https://use.typekit.net/yxy7rlh.css" },
   ];
 }
 
