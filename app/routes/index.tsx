@@ -71,22 +71,18 @@ export default function Index() {
         <div className="text-block key-info">
           <h3 className="preheader">The Nitty Gritty</h3>
           <h1 className="header">Let's Talk Details</h1>
-          <p className="speil">
-            Once I receive your shipped product; you should expect:
-          </p>
-          <p className="speil">Once I receive the product you shipped to me:</p>
           <div className="about-group">
             <div className="about-item">
-              <h1>120</h1>
-              <p>dollars</p>
+              <h1 className="details-header">120</h1>
+              <p className="details-type">dollars</p>
             </div>
             <div className="about-group-center">
-              <h1>5</h1>
-              <p>photos</p>
+              <h1 className="details-header">5</h1>
+              <p className="details-type">photos</p>
             </div>
             <div>
-              <h1>1</h1>
-              <p>week</p>
+              <h1 className="details-header">1</h1>
+              <p className="details-type">week</p>
             </div>
           </div>
           <p className="speil">
@@ -94,7 +90,7 @@ export default function Index() {
             post-production delivered to your inbox within 3 business days.
           </p>
           <p className="speil">
-            Each project has it's own needs. Wether you want video or more
+            Each project has it's own needs. Whether you want video or more
             images, I am happy to get you a quote.
           </p>
         </div>
@@ -104,7 +100,11 @@ export default function Index() {
         </div>
         <a href="mailto:macro@roush.io">macro@roush.io</a>
         {"  "}
-        <button title={"copy"} onClick={() => onEmailCopyClick()}>
+        <button
+          className="copy-email"
+          title={"copy"}
+          onClick={() => onEmailCopyClick()}
+        >
           {isCopied ? "✅" : "📋"}
         </button>
       </div>

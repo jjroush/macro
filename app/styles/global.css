@@ -1,8 +1,14 @@
+:root {
+  --pre-header-size: 20px/23px;
+  --header-font-size: 60px/70px;
+  --p-font-size: 36px/42px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   color: white;
-  font: normal normal 300 60px/70px Bicyclette;
+  font: normal normal 300 var(--header-font-size) Bicyclette;
   letter-spacing: 0px;
   margin-top: 0;
   margin-bottom: 59px;
@@ -12,6 +18,7 @@
   display: flex;
   border-bottom: dotted #707070;
   border-top: dotted #707070;
+  margin-bottom: 30px;
 }
 
 .about-group-center {
@@ -92,6 +99,12 @@
 }
 
 @media only screen and (max-width: 500px) {
+  :root {
+    --pre-header-size: 15px/17.25px;
+    --header-font-size: 45px/52.5px;
+    --p-font-size: 27px/31.5px;
+  }
+
   .video-header {
     object-position: top right;
     height: 70vh;
@@ -142,13 +155,13 @@ body {
 .preheader {
   color: #707070;
   text-transform: uppercase;
-  font: normal normal normal 20px/23px Bicyclette;
+  font: normal normal normal var(--pre-header-size) Bicyclette;
   letter-spacing: 3.6px;
 }
 
 .speil {
   color: #707070;
-  font: normal normal normal 36px/42px Bicyclette;
+  font: normal normal normal var(--p-font-size) Bicyclette;
   letter-spacing: 0px;
   font-weight: lighter;
   max-width: 925px;
@@ -181,4 +194,25 @@ a {
   margin-bottom: 100px;
   background-color: #272727;
   border-radius: 34px;
+}
+
+.details-header {
+  font: normal normal bold var(--header-font-size) Bicyclette;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.details-type {
+  font: normal normal normal var(--pre-header-size) Bicyclette;
+  letter-spacing: 3.6px;
+  color: #707070;
+}
+
+.copy-email {
+  background-color: #707070;
+  border: none;
+  border-radius: 8px;
+  margin-top: -4px;
+  padding: 2px 4px;
+  font-size: 18px;
 }
