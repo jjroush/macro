@@ -191,6 +191,7 @@ body {
 
 li {
   font-weight: lighter;
+  font: normal normal normal var(--p-font-size) Bicyclette;
 }
 
 .text-block {
