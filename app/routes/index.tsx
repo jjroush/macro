@@ -53,7 +53,7 @@ export default function Index() {
         <div className="text-block">
           <h3 className="preheader">Making your products</h3>
           <h1 className="header">Larger than Life</h1>
-          <p className="speil">
+          <p className="paragraph">
             Macro photography can take your product to the next level by
             showcasing details that would otherwise go unnoticed.
           </p>
@@ -62,7 +62,7 @@ export default function Index() {
         <div className="text-block">
           <h3 className="preheader">Who am I?</h3>
           <h1 className="header">Meet the Photographer</h1>
-          <p className="speil">
+          <p className="paragraph">
             Hello, I'm Jacob 👋. By day I am a software engineer based out of
             Des Moines, Iowa and when I'm not at work; I'm attempting to recoup
             the cost of my expensive taste in camera equipment.
@@ -73,30 +73,40 @@ export default function Index() {
           <h1 className="header">Let's Talk Details</h1>
           <div className="about-group">
             <div className="about-item">
+              <img className="logo-mobile" src="./Macro_Money.svg"></img>
               <h1 className="details-header">120</h1>
               <p className="details-type">dollars</p>
             </div>
             <div className="about-group-center">
+              <img className="logo-mobile" src="./Macro_Camera.svg"></img>
               <h1 className="details-header">5</h1>
               <p className="details-type">photos</p>
             </div>
-            <div>
+            <div className="about-item">
+              <img className="logo-mobile" src="./Macro_Clock.svg"></img>
               <h1 className="details-header">1</h1>
               <p className="details-type">week</p>
             </div>
           </div>
-          <p className="speil">
+          <p className="paragraph">
             A basic package includes 5 high-resolution photos and
             post-production delivered to your inbox within 3 business days.
           </p>
-          <p className="speil">
+          <p className="paragraph">
             Each project has it's own needs. Whether you want video or more
             images, I am happy to get you a quote.
           </p>
+          <h3 className="preheader">What's Next?</h3>
+          <h1 className="header">Steps</h1>
+          <ol>
+            <li>Contact me to get a quote.</li>
+            <li>Ship your product out.</li>
+            <li>Photos will be digitally delivered in a week.</li>
+          </ol>
         </div>
         <div className="text-block">
           <h3 className="preheader">Let's Talk</h3>
-          <h1 className="header">Reach out to me</h1>
+          <h1 className="header">Reach Out To Me</h1>
         </div>
         <a href="mailto:macro@roush.io">macro@roush.io</a>
         {"  "}
