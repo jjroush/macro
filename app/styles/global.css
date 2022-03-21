@@ -9,7 +9,6 @@
   justify-content: space-between;
   color: white;
   font: normal normal 300 var(--header-font-size) Bicyclette;
-  letter-spacing: 0px;
   margin-top: 0;
   margin-bottom: 59px;
 }
@@ -138,7 +137,6 @@ body {
   font: normal normal normal 36px/42px Bicyclette;
   background-color: black;
 
-  letter-spacing: 0px;
   color: #707070;
   opacity: 1;
 }
@@ -182,16 +180,17 @@ body {
 
 .paragraph {
   color: #707070;
-  font: normal normal normal var(--p-font-size) Bicyclette;
-  letter-spacing: 0px;
-  font-weight: lighter;
+  font: normal normal lighter var(--p-font-size) Bicyclette;
   max-width: 925px;
   margin-top: 0px;
 }
 
+ol {
+  margin-top: 0;
+}
+
 li {
-  font-weight: lighter;
-  font: normal normal normal var(--p-font-size) Bicyclette;
+  font: normal normal lighter var(--p-font-size) Bicyclette;
 }
 
 .text-block {
@@ -224,7 +223,6 @@ a {
 
 .details-header {
   font: normal normal bold var(--header-font-size) Bicyclette;
-  letter-spacing: 0px;
   color: #ffffff;
 }
 
@@ -241,6 +239,7 @@ a {
   margin-top: -4px;
   padding: 2px 4px;
   font-size: 18px;
+  width: 48px;
 }
 
 .about-group > div {

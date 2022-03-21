@@ -25,9 +25,26 @@ export default function Index() {
     setIsCopied(true);
     window.fathom.trackGoal("VHOXAA9S", 0);
   };
+
+  const onEmailLinkClick = () => {
+    window.fathom.trackGoal("TVIH4Z79", 0);
+  };
+
+  const handleUserScroll = () => {
+    if (
+      window.innerHeight + window.pageYOffset >=
+      document.body.offsetHeight - 100
+    ) {
+      window.fathom.trackGoal("HU9SRLJ4", 0);
+    }
+  };
+
   useEffect(() => {
-    console.log(navigator.userAgent);
-  });
+    window.addEventListener("scroll", handleUserScroll);
+    return () => {
+      window.removeEventListener("scroll", handleUserScroll);
+    };
+  }, []);
 
   const [isCopied, setIsCopied] = useState<Boolean>(false);
   return (
@@ -98,7 +115,7 @@ export default function Index() {
           </p>
           <h3 className="preheader">What's Next?</h3>
           <h1 className="header">Steps</h1>
-          <ol>
+          <ol className="list">
             <li>Contact me to get a quote.</li>
             <li>Ship your product out.</li>
             <li>Photos will be digitally delivered in a week.</li>
@@ -108,7 +125,9 @@ export default function Index() {
           <h3 className="preheader">Let's Talk</h3>
           <h1 className="header">Reach Out To Me</h1>
         </div>
-        <a href="mailto:macro@roush.io">macro@roush.io</a>
+        <a href="mailto:macro@roush.io" onClick={() => onEmailLinkClick()}>
+          macro@roush.io
+        </a>
         {"  "}
         <button
           className="copy-email"
