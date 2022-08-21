@@ -242,6 +242,10 @@ a {
   width: 48px;
 }
 
+.gallery-image {
+  width: 100%;
+}
+
 .about-group > div {
   padding: 60px 90px;
 }
