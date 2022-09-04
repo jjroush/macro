@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   color: white;
-  font: normal normal 300 var(--header-font-size) Bicyclette;
+  font: normal normal 300 var(--header-font-size) system-ui;
   margin-top: 0;
   margin-bottom: 59px;
 }
@@ -134,7 +134,7 @@
 body {
   margin: 0px 0px;
   text-align: center;
-  font: normal normal normal 36px/42px Bicyclette;
+  font: normal normal normal 36px/42px system-ui;
   background-color: black;
 
   color: #707070;
@@ -161,26 +161,26 @@ body {
   height: 100%;
   content: "";
   background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 85%,
-    rgba(0, 0, 0, 0.3) 88%,
-    rgba(0, 0, 0, 0.6) 90%,
-    rgba(0, 0, 0, 0.8) 93%,
-    rgba(0, 0, 0, 0.9) 95%,
-    rgb(0, 0, 0) 100%
+          to bottom,
+          rgba(0, 0, 0, 0) 85%,
+          rgba(0, 0, 0, 0.3) 88%,
+          rgba(0, 0, 0, 0.6) 90%,
+          rgba(0, 0, 0, 0.8) 93%,
+          rgba(0, 0, 0, 0.9) 95%,
+          rgb(0, 0, 0) 100%
   );
 }
 
 .preheader {
   color: #707070;
   text-transform: uppercase;
-  font: normal normal normal var(--pre-header-size) Bicyclette;
+  font: normal normal normal var(--pre-header-size) system-ui;
   letter-spacing: 3.6px;
 }
 
 .paragraph {
   color: #707070;
-  font: normal normal lighter var(--p-font-size) Bicyclette;
+  font: normal normal lighter var(--p-font-size) system-ui;
   max-width: 925px;
   margin-top: 0px;
 }
@@ -190,7 +190,7 @@ ol {
 }
 
 li {
-  font: normal normal lighter var(--p-font-size) Bicyclette;
+  font: normal normal lighter var(--p-font-size) system-ui;
 }
 
 .text-block {
@@ -201,13 +201,13 @@ li {
 }
 
 * {
-  font-family: Bicyclette;
-  font: normal normal normal 36px/42px Bicyclette;
+  font-family: system-ui;
+  font: normal normal normal 36px/42px system-ui;
 }
 
 a {
   color: #ec7734;
-  font: normal normal normal 30px/35px Bicyclette;
+  font: normal normal normal 30px/35px system-ui;
   letter-spacing: 5.1px;
   text-transform: uppercase;
   text-decoration: none;
@@ -222,12 +222,12 @@ a {
 }
 
 .details-header {
-  font: normal normal bold var(--header-font-size) Bicyclette;
+  font: normal normal bold var(--header-font-size) system-ui;
   color: #ffffff;
 }
 
 .details-type {
-  font: normal normal normal var(--pre-header-size) Bicyclette;
+  font: normal normal normal var(--pre-header-size) system-ui;
   letter-spacing: 3.6px;
   color: #707070;
 }

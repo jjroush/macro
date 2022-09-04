@@ -20,9 +20,11 @@ const images = [
 ];
 
 export default function Index() {
+  const [isCopied, setIsCopied] = useState(false);
+
   const onEmailCopyClick = () => {
     navigator.clipboard.writeText("macro@roush.io");
-    setIsCopied(true);
+    // setIsCopied(true);
     window.fathom.trackGoal("VHOXAA9S", 0);
   };
 
@@ -35,7 +37,7 @@ export default function Index() {
       window.innerHeight + window.pageYOffset >=
       document.body.offsetHeight - 100
     ) {
-      window.fathom.trackGoal("HU9SRLJ4", 0);
+      // window.fathom.trackGoal("HU9SRLJ4", 0);
     }
   };
 
@@ -46,7 +48,6 @@ export default function Index() {
     };
   }, []);
 
-  const [isCopied, setIsCopied] = useState<Boolean>(false);
   return (
     <>
       <div className="mobile-header-container">
