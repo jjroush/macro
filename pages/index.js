@@ -68,24 +68,22 @@ export default function Index() {
         className="gutter"
         style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
       >
-        <div className="text-block">
-          <h3 className="preheader">Making your products</h3>
-          <h1 className="header">Larger than Life</h1>
-          <p className="paragraph">
-            Macro photography can take your product to the next level by
-            showcasing details that would otherwise go unnoticed.
-          </p>
+        <div className="two-column">
+          <div>
+            <h3 className="newpreheader">Making your products</h3>
+            <h1 className="header">Larger than Life</h1>
+          </div>
+          <div>
+            <p className="boldparagraph">
+              Macro photography takes your products to the next level by showcasing details that would otherwise go unnoticed.
+            </p>
+            <p className="paragraph">
+              Hello, I’m Jacob! By day, I’m a software engineer based out of Des Moines, Iowa. By night, I flex my photography skills in an attempt to recoup the cost of my expensive taste in camera equipment.
+              A basic package includes 5 high-resolution photos and post-production delivered to your inbox within 7 business days.
+            </p>
+          </div>
         </div>
         <ImageGallery showPlayButton={false} items={images} lazyload={true} />
-        <div className="text-block">
-          <h3 className="preheader">Who am I?</h3>
-          <h1 className="header">Meet the Photographer</h1>
-          <p className="paragraph">
-            Hello, I'm Jacob 👋. By day I am a software engineer based out of
-            Des Moines, Iowa and when I'm not at work; I'm attempting to recoup
-            the cost of my expensive taste in camera equipment.
-          </p>
-        </div>
         <div className="text-block key-info">
           <h3 className="preheader">The Nitty Gritty</h3>
           <h1 className="header">Let's Talk Details</h1>
@@ -140,4 +138,4 @@ export default function Index() {
       </div>
     </>
   );
-}
+};
