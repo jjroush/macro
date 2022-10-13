@@ -85,6 +85,15 @@
   filter: brightness(1.8);
 }
 
+.video-header-2 {
+  height: 95vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
+}
+
 .logo {
   position: absolute;
   bottom: 15%;
@@ -153,6 +162,15 @@ body {
   left: 0;
   z-index: -1;
 }
+
+.video-container-2 {
+  overflow-x: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 
 .video-container::after {
   position: absolute;
@@ -273,4 +291,8 @@ a {
   color: #FFFFFF;
   opacity: 1;
   margin: 0px 0px 15px 0px;
+}
+
+.header-number {
+  display: inline;
 }
