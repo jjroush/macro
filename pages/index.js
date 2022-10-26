@@ -1,3 +1,5 @@
+import * as Fathom from 'fathom-client';
+
 import { useEffect, useState, useRef } from "react";
 import ImageGallery from "react-image-gallery";
 import { useInView } from 'react-intersection-observer';
@@ -28,11 +30,11 @@ export default function Index() {
   const onEmailCopyClick = () => {
     navigator.clipboard.writeText("macro@roush.io");
     // setIsCopied(true);
-    window.fathom.trackGoal("VHOXAA9S", 0);
+    Fathom.trackGoal("VHOXAA9S", 0);
   };
 
   const onEmailLinkClick = () => {
-    window.fathom.trackGoal("TVIH4Z79", 0);
+    Fathom.trackGoal("TVIH4Z79", 0);
   };
 
   const { ref, inView, entry } = useInView({
@@ -42,9 +44,9 @@ export default function Index() {
   });
 
   useEffect(() => {
-    elementRef.current.playbackRate = .75;
+    elementRef.current.playbackRate = .5;
     elementRef.current.play();
-    // window.fathom.trackGoal("HU9SRLJ4", 0);
+    Fathom.trackGoal("HU9SRLJ4", 0);
     console.log('boog', elementRef.current.play())
   }, [inView]);
 
@@ -114,25 +116,27 @@ export default function Index() {
             </div>
           </div>
         </div>
-
-        <a href="mailto:macro@roush.io" onClick={() => onEmailLinkClick()}>
-          macro@roush.io
-        </a>
-        {"  "}
-        <button
-          className="copy-email"
-          title={"copy"}
-          onClick={() => onEmailCopyClick()}
-        >
-          {isCopied ? "✅" : "📋"}
-        </button>
-
       </div>
-      <div className="video-container-2" ref={ref} >
-        <video className="video-header-2" ref={elementRef} muted playsInline>
-          <source src="/website-scroll_1.mp4" type="video/mp4" />
-        </video>
-      </div>
+        <div className="wrapper">
+          <video className="video-header-2" ref={elementRef} muted playsInline>
+            <source src="/website-scroll_1.mp4" type="video/mp4" />
+          </video>
+          <div className="contact-container">
+            <h3 className="contactpreheader">Let's Talk</h3>
+            <p className="cta">Reach out to me</p>
+            <a className="email" href="mailto:macro@roush.io" onClick={() => onEmailLinkClick()}>
+              macro@roush.io
+            </a>
+            {"  "}
+            <button
+                className="copy-email"
+                title={"copy"}
+                onClick={() => onEmailCopyClick()}
+            >
+              {isCopied ? "✅" : "📋"}
+            </button>
+          </div>
+        </div>
     </>
   );
 };
