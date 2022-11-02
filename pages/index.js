@@ -4,6 +4,8 @@ import { useEffect, useState, useRef } from "react";
 import ImageGallery from "react-image-gallery";
 import { useInView } from 'react-intersection-observer';
 
+import Image from 'next/image';
+
 const images = [
   {
     original: "https://roush-image.s3.amazonaws.com/macro/pencil.jpg",
@@ -29,7 +31,7 @@ export default function Index() {
 
   const onEmailCopyClick = () => {
     navigator.clipboard.writeText("macro@roush.io");
-    // setIsCopied(true);
+    setIsCopied(true);
     Fathom.trackGoal("VHOXAA9S", 0);
   };
 
@@ -139,7 +141,7 @@ export default function Index() {
                 title={"copy"}
                 onClick={() => onEmailCopyClick()}
             >
-              {isCopied ? "✅" : "📋"}
+              {isCopied ? <Image src="/Copy_2.svg" width={40} height={40} /> : <Image src="/Copy.svg" width={40} height={40} /> }
             </button>
           </div>
         </div>
