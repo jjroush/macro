@@ -39,15 +39,16 @@ export default function Index() {
 
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: .6,
-    triggerOnce: true
+    threshold: .5,
   });
 
   useEffect(() => {
-    elementRef.current.playbackRate = .5;
-    elementRef.current.play();
-    Fathom.trackGoal("HU9SRLJ4", 0);
-    console.log('boog', elementRef.current.play())
+    console.log('inview', inView)
+    if (inView) {
+      elementRef.current.playbackRate = .5;
+      elementRef.current.play();
+      Fathom.trackGoal("HU9SRLJ4", 0);
+    }
   }, [inView]);
 
   return (
@@ -85,7 +86,12 @@ export default function Index() {
             </p>
           </div>
         </div>
+      </div>
         <ImageGallery showPlayButton={false} items={images} lazyload={true} />
+        <div
+            className="gutter"
+            style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
+        >
         <div className="two-column">
           <div>
             <h3 className="newpreheader">Making your products</h3>
@@ -117,7 +123,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-        <div className="wrapper">
+        <div className="wrapper" ref={ref}>
           <video className="video-header-2" ref={elementRef} muted playsInline>
             <source src="/website-scroll_1.mp4" type="video/mp4" />
           </video>
