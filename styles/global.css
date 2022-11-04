@@ -110,34 +110,6 @@
   display: none;
 }
 
-@media only screen and (max-width: 500px) {
-  :root {
-    --pre-header-size: 15px/17.25px;
-    --header-font-size: 45px/52.5px;
-    --p-font-size: 27px/31.5px;
-  }
-
-  .video-header {
-    object-position: top right;
-    height: 70vh;
-  }
-  .logo {
-    display: none;
-  }
-
-  .logo-mobile {
-    margin-top: 55px;
-    width: 95%;
-  }
-
-  .mobile-header-container {
-    display: block;
-    height: 25vh;
-    top: 0;
-    left: 0;
-  }
-}
-
 .text-container {
   background-color: white;
 }
@@ -204,6 +176,7 @@ body {
   max-width: 925px;
   margin-top: 0px;
   text-align: left;
+  line-height: 1.5;
 }
 
 ol {
@@ -283,17 +256,17 @@ a {
 .contactpreheader {
   color: #DFFD35;
   text-transform: uppercase;
-  font: normal normal normal var(--pre-header-size) system-ui;
+  font: normal normal lighter var(--pre-header-size) system-ui;
   letter-spacing: 3.6px;
 }
 
 .boldparagraph {
   text-align: left;
-  font: normal normal normal 36px/52px system-ui;
+  font: normal normal 200 52px system-ui;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 50px 0px;
 }
 
 .header-number {
@@ -302,7 +275,7 @@ a {
 
 .contact-container {
   position: absolute;
-  bottom: 55%;
+  bottom: 45%;
   left: 0;
   right: 0;
   z-index: 2;
@@ -313,14 +286,48 @@ a {
 }
 
 .cta {
-  font: normal normal bold 51px/60px system-ui;
+  font: normal normal normal 50px system-ui;
   letter-spacing: 0px;
   color: #FFFFFF;
-  /*opacity: 1;*/
+  margin-top: 20px;
 }
 
 .email {
-  font: normal normal normal 30px/49px system-ui;
+  font: normal normal lighter 30px system-ui;
+  vertical-align: top;
   letter-spacing: 5.1px;
   color: #DFFD35;
+}
+
+@media only screen and (max-width: 500px) {
+  :root {
+    --pre-header-size: 15px/17.25px;
+    --header-font-size: 45px/52.5px;
+    --p-font-size: 27px/31.5px;
+  }
+
+  .video-header {
+    object-position: top right;
+    height: 70vh;
+  }
+  .logo {
+    display: none;
+  }
+
+  .logo-mobile {
+    margin-top: 55px;
+    width: 95%;
+  }
+
+  .mobile-header-container {
+    display: block;
+    height: 25vh;
+    top: 0;
+    left: 0;
+  }
+
+  .two-column {
+    display: block;
+    padding-top: 50px;
+  }
 }

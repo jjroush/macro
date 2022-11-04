@@ -1,5 +1,6 @@
 import * as Fathom from 'fathom-client';
 
+import Head from 'next/head';
 import { useEffect, useState, useRef } from "react";
 import ImageGallery from "react-image-gallery";
 import { useInView } from 'react-intersection-observer';
@@ -55,6 +56,16 @@ export default function Index() {
 
   return (
     <>
+      <Head>
+        <title>
+          Macro Product Photography DSM
+        </title>
+        <meta
+            name="description"
+            content="Macro photography takes your products to the next level by showcasing details that would otherwise go unnoticed."
+            key="desc"
+        />
+      </Head>
       <div className="mobile-header-container">
         <img className="logo-mobile" src="/macro-logo.svg"></img>
       </div>
@@ -132,6 +143,7 @@ export default function Index() {
           <div className="contact-container">
             <h3 className="contactpreheader">Let's Talk</h3>
             <p className="cta">Reach out to me</p>
+            <div>
             <a className="email" href="mailto:macro@roush.io" onClick={() => onEmailLinkClick()}>
               macro@roush.io
             </a>
@@ -143,6 +155,7 @@ export default function Index() {
             >
               {isCopied ? <Image src="/Copy_2.svg" width={40} height={40} /> : <Image src="/Copy.svg" width={40} height={40} /> }
             </button>
+            </div>
           </div>
         </div>
     </>
