@@ -76,7 +76,7 @@ export default function Index() {
       </div>
       <div
         style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
-        className="text-container"
+        className="gutter"
       >
         <img className="logo" src="/macro-logo.svg"></img>
       </div>
@@ -115,21 +115,21 @@ export default function Index() {
             <div>
               <h1 className="header-number">01</h1>
               <h1 className="header-number header"> Quote</h1>
-              <p>
+              <p className="paragraph">
                 Contact Macro for a custom quote. Macro offers custom photo and video solutions based on your needs. Choose from a basic package or something completely custom.
               </p>
             </div>
             <div>
               <h1 className="header-number">02</h1>
               <h1 className="header-number header"> Ship</h1>
-              <p>
+              <p className="paragraph">
                 It’s time for your close up! Carefully pack your product and ship it to Macro using a trusted carrier. We’ll track it every step of the way.
               </p>
             </div>
             <div>
               <h1 className="header-number">03</h1>
               <h1 className="header-number header"> Launch</h1>
-              <p>
+              <p className="paragraph">
                 Your high-resolution images with post-production will be digitally delivered within a week, so keep a close eye on your inbox!
               </p>
             </div>
