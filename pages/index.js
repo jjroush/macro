@@ -46,7 +46,6 @@ export default function Index() {
   });
 
   useEffect(() => {
-    console.log('inview', inView)
     if (inView) {
       elementRef.current.playbackRate = .5;
       elementRef.current.play();
@@ -71,7 +70,7 @@ export default function Index() {
       </div>
       <div className="video-container">
         <video className="video-header"  muted playsInline autoPlay loop>
-          <source src="/desktop-header-3mg.mp4" type="video/mp4" />
+          <source src="/header.mp4" type="video/mp4" />
         </video>
       </div>
       <div
@@ -113,21 +112,21 @@ export default function Index() {
           <div className="text-block">
             <h3 className="preheader">Let's Talk</h3>
             <div>
-              <h1 className="header-number">01</h1>
+              <h1 className="header-number-bullet preheader">01</h1>
               <h1 className="header-number header"> Quote</h1>
               <p className="paragraph">
                 Contact Macro for a custom quote. Macro offers custom photo and video solutions based on your needs. Choose from a basic package or something completely custom.
               </p>
             </div>
             <div>
-              <h1 className="header-number">02</h1>
+              <h1 className="header-number-bullet preheader">02</h1>
               <h1 className="header-number header"> Ship</h1>
               <p className="paragraph">
                 It’s time for your close up! Carefully pack your product and ship it to Macro using a trusted carrier. We’ll track it every step of the way.
               </p>
             </div>
             <div>
-              <h1 className="header-number">03</h1>
+              <h1 className="header-number-bullet preheader">03</h1>
               <h1 className="header-number header"> Launch</h1>
               <p className="paragraph">
                 Your high-resolution images with post-production will be digitally delivered within a week, so keep a close eye on your inbox!
