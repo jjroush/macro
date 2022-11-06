@@ -85,7 +85,6 @@
   left: 0;
   z-index: -2;
   object-fit: cover;
-  filter: brightness(1.8);
 }
 
 .video-header-2 {
@@ -104,8 +103,8 @@
   left: 90px;
   width: 35%;
   min-width: 400px;
-  -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 1));
-  filter: drop-shadow(4px 4px 8px rgb(0, 0, 0));
+  -webkit-filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 1));
+  filter: drop-shadow(2px 2px 8px rgb(0, 0, 0));
 }
 
 .mobile-header-container {
@@ -273,6 +272,14 @@ a {
 
 .header-number {
   display: inline;
+  line-height: 1;
+}
+
+.header-number-bullet {
+  display: inline;
+  color: #DFFD35;
+  line-height: 1;
+  margin-right: 15px;
 }
 
 .contact-container {
@@ -329,7 +336,7 @@ a {
 
   .mobile-header-container {
     display: block;
-    height: 25vh;
+    /*height: 25vh;*/
     top: 0;
     left: 0;
   }
