@@ -2,7 +2,6 @@ import * as Fathom from 'fathom-client';
 
 import Head from 'next/head';
 import { useEffect, useState, useRef } from "react";
-import ImageGallery from "react-image-gallery";
 import { useInView } from 'react-intersection-observer';
 
 import Image from 'next/image';
@@ -99,8 +98,10 @@ export default function Index() {
           </div>
         </div>
       </div>
-        <ImageGallery showPlayButton={false} items={images} lazyload={true} />
-        <div
+        <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/pencil.jpg" width={1920} height={1080} alt="pencil" />
+      <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/watch.jpg" width={1920} height={1080} alt="watch" />
+      <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/quarter.jpg" width={1920} height={1080} alt="watch" />
+       <div
             className="gutter"
             style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
         >

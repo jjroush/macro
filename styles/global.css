@@ -309,12 +309,23 @@ a {
   color: #DFFD35;
 }
 
+.full-gallery {
+  height: 85vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
 @media only screen and (max-width: 625px) {
   :root {
     --pre-header-size: 15px/17.25px;
     --header-font-size: 45px/52.5px;
     --p-font-size: 27px/31.5px;
     --bold-header-size: 34px;
+  }
+
+  .full-gallery {
+    height: 68vh;
   }
 
   .video-header {
@@ -343,6 +354,6 @@ a {
 
   .two-column {
     display: block;
-    padding-top: 50px;
+    padding-top: 80px;
   }
 }
