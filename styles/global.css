@@ -80,6 +80,7 @@
 
 .video-header {
   height: 95vh;
+  height: 95lvh;
   width: 100vw;
   top: 0;
   left: 0;
@@ -311,6 +312,7 @@ a {
 
 .full-gallery {
   height: 85vh;
+  height: 85lvh;
   width: 100%;
   object-fit: cover;
   object-position: left;
@@ -326,11 +328,13 @@ a {
 
   .full-gallery {
     height: 68vh;
+    height: 68lvh;
   }
 
   .video-header {
     object-position: top right;
     height: 70vh;
+    height: 70lvh;
   }
   .logo {
     display: none;
