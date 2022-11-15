@@ -107,26 +107,25 @@ export default function Index() {
         >
         <div className="two-column">
           <div>
-            <h3 className="newpreheader">Making your products</h3>
+            <h3 className="newpreheader">The Process</h3>
             <h1 className={"header"}>{"What's Next?"}</h1>
           </div>
           <div className="text-block">
-            <h3 className="preheader">Let's Talk</h3>
-            <div>
+            <div className="category">
               <h1 className="header-number-bullet preheader">01</h1>
               <h1 className="header-number header"> Quote</h1>
               <p className="paragraph">
                 Contact Macro for a custom quote. Macro offers custom photo and video solutions based on your needs. Choose from a basic package or something completely custom.
               </p>
             </div>
-            <div>
+            <div className="category">
               <h1 className="header-number-bullet preheader">02</h1>
               <h1 className="header-number header"> Ship</h1>
               <p className="paragraph">
                 It’s time for your close up! Carefully pack your product and ship it to Macro using a trusted carrier. We’ll track it every step of the way.
               </p>
             </div>
-            <div>
+            <div className="category">
               <h1 className="header-number-bullet preheader">03</h1>
               <h1 className="header-number header"> Launch</h1>
               <p className="paragraph">

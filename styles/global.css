@@ -176,9 +176,11 @@ body {
   color: #707070;
   font: normal normal lighter var(--p-font-size) system-ui;
   max-width: 925px;
-  margin-top: 0px;
+  margin-top: 50px;
   text-align: left;
   line-height: 1.5;
+  margin-bottom: 85px;
+
 }
 
 ol {
@@ -316,6 +318,10 @@ a {
   width: 100%;
   object-fit: cover;
   object-position: left;
+}
+
+.category {
+  text-align: left;
 }
 
 @media only screen and (max-width: 625px) {
