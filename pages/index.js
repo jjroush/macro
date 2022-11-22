@@ -1,5 +1,6 @@
 import * as Fathom from 'fathom-client';
 
+import Link from 'next/link'
 import Head from 'next/head';
 import { useEffect, useState, useRef } from "react";
 import { useInView } from 'react-intersection-observer';
@@ -114,6 +115,9 @@ export default function Index() {
             <div className="category">
               <h1 className="header-number-bullet preheader">01</h1>
               <h1 className="header-number header"> Quote</h1>
+              <p className="paragraph">
+                Contact Macro for a custom quote. Macro offers custom photo and video solutions based on your needs. Choose from a <Link href="#" onClick={() => {}} className="linkButton">&nbsp;basic package&nbsp;</Link> or something completely custom.
+              </p>
               <p className="paragraph">
                 Contact Macro for a custom quote. Macro offers custom photo and video solutions based on your needs. Choose from a basic package or something completely custom.
               </p>
