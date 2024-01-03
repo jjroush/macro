@@ -52,6 +52,13 @@ export default function Index() {
     }
   }, [inView]);
 
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.pageYOffset
+      document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+    }, false);
+  });
+
   return (
     <>
       <Head>
@@ -157,6 +164,7 @@ export default function Index() {
             </div>
           </div>
         </div>
+      <Image className="apeture" src="/aperture.svg" width={150} height={150} />
     </>
   );
 };
