@@ -245,7 +245,7 @@ a {
 
 .two-column {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 39% 54% 7%;
   padding-top: 50px;
 }
 
@@ -322,6 +322,28 @@ a {
 
 .category {
   text-align: left;
+}
+
+.apeture {
+  opacity: 60%;
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  animation: rotate 2s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -2s);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .apeture {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 625px) {
