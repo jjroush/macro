@@ -164,7 +164,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      <Image className="apeture" src="/aperture.svg" width={150} height={150} />
+      <Image className="apeture" src="/Macro_Mark-01.svg" width={125} height={125} />
     </>
   );
 };

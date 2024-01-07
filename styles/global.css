@@ -245,7 +245,7 @@ a {
 
 .two-column {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 39% 54% 7%;
   padding-top: 50px;
 }
 
@@ -337,6 +337,12 @@ a {
 @keyframes rotate {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .apeture {
+    display: none;
   }
 }
 
