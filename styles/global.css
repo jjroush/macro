@@ -95,7 +95,7 @@
   left: 0;
   z-index: -2;
   object-fit: cover;
-  filter: brightness(.9);
+  filter: brightness(.6);
 }
 
 .logo {
@@ -332,6 +332,10 @@ a {
   animation: rotate 2s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -2s);
+}
+
+.arrow {
+  text-align: left;
 }
 
 @keyframes rotate {

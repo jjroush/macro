@@ -75,7 +75,7 @@ export default function Index() {
         <img className="logo-mobile" src="/macro-logo.svg"></img>
       </div>
       <div className="video-container">
-        <video className="video-header"  muted playsInline autoPlay loop>
+        <video className="video-header" muted playsInline autoPlay loop>
           <source src="/header.mp4" type="video/mp4" />
         </video>
       </div>
@@ -105,7 +105,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-        <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/pencil.jpg" width={1920} height={1080} alt="pencil" />
+      <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/pencil.jpg" width={1920} height={1080} alt="pencil" />
       <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/watch.jpg" width={1920} height={1080} alt="watch" />
       <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/quarter.jpg" width={1920} height={1080} alt="watch" />
        <div
@@ -113,9 +113,10 @@ export default function Index() {
             style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
         >
         <div className="two-column">
-          <div>
+          <div className={"arrow"}>
             <h3 className="newpreheader">The Process</h3>
             <h1 className={"header"}>{"What's Next?"}</h1>
+            <Image className={"arrow"} src="/Arrow.svg" width={70} height={75} />
           </div>
           <div className="text-block">
             <div className="category">
