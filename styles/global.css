@@ -260,7 +260,7 @@ a {
 .contactpreheader {
   color: #DFFD35;
   text-transform: uppercase;
-  font: normal normal lighter var(--pre-header-size) system-ui;
+  font: normal normal normal var(--pre-header-size) system-ui;
   letter-spacing: 3.6px;
 }
 
@@ -305,7 +305,7 @@ a {
 }
 
 .email {
-  font: normal normal lighter 30px system-ui;
+  font: normal normal normal 30px system-ui;
   /*vertical-align: top;*/
   letter-spacing: 5.1px;
   margin-top: -50px;
