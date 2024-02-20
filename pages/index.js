@@ -28,6 +28,7 @@ const images = [
 export default function Index() {
   const [isCopied, setIsCopied] = useState(false);
   const elementRef = useRef(null);
+  const [shouldShowModal, setShouldShowModal] = useState(false);
 
   const onEmailCopyClick = () => {
     navigator.clipboard.writeText("macro@roush.io");
@@ -122,8 +123,27 @@ export default function Index() {
             <div className="category">
               <h1 className="header-number-bullet preheader">01</h1>
               <h1 className="header-number header"> Quote</h1>
+              {shouldShowModal && (
+                <div id="myModal" className="modal">
+                  <div className="modal-content">
+                    <span className="close" onClick={() => setShouldShowModal(false)}>&times;</span>
+                    <h1>Get Started</h1>
+                    <p>A basic package includes 5 high-resolution photos and post-production delivered to your inbox within 7 business days.</p>
+                    <div>
+                      <div>
+                        <h1>5</h1>
+                        <p>High Photos</p>
+                        <h1>7</h1>
+                        <p>Business Days</p>
+                        <h1>120$</h1>
+                      </div>
+                    </div>
+                    To add additional photos or video to your project, reach out directly for a custom quote to fit your needs.
+                  </div>
+                </div>
+              )}
               <p className="paragraph">
-                Contact Macro for a custom quote. Macro offers custom photo and video solutions based on your needs. Choose from a basic package or something completely custom.
+                Contact Macro for a custom quote. Macro offers custom photo and video solutions based on your needs. Choose from a <a onClick={() => setShouldShowModal(true)}>basic package</a> or something completely custom.
               </p>
             </div>
             <div className="category">
