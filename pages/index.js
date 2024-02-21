@@ -127,18 +127,18 @@ export default function Index() {
                 <div id="myModal" className="modal">
                   <div className="modal-content">
                     <span className="close" onClick={() => setShouldShowModal(false)}>&times;</span>
-                    <h1>Get Started</h1>
+                    <p>Get Started</p>
                     <p>A basic package includes 5 high-resolution photos and post-production delivered to your inbox within 7 business days.</p>
-                    <div>
-                      <div>
-                        <h1>5</h1>
-                        <p>High Photos</p>
-                        <h1>7</h1>
-                        <p>Business Days</p>
-                        <h1>120$</h1>
-                      </div>
-                    </div>
-                    To add additional photos or video to your project, reach out directly for a custom quote to fit your needs.
+                    {/*<div>*/}
+                    {/*  <div>*/}
+                    {/*    <p>5</p>*/}
+                    {/*    <p>High Photos</p>*/}
+                    {/*    <p>7</p>*/}
+                    {/*    <p>Business Days</p>*/}
+                    {/*    <p>120$</p>*/}
+                    {/*  </div>*/}
+                    {/*</div>*/}
+                    {/*To add additional photos or video to your project, reach out directly for a custom quote to fit your needs.*/}
                   </div>
                 </div>
               )}

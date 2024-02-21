@@ -365,22 +365,27 @@ a:hover::before {
 .modal {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  right: -5%;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  right: 45px;
+  top: 5%;
+  padding-right: 193px;
+  width: 75%; /* Full width */
+  /*height: 100%; !* Full height *!*/
+  overflow: clip; /* Enable scroll if needed */
+  background-color: #fefefe;
+  height: fit-content;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  border: 1px solid #999;
+  border: 1px solid #bb0f0f;
   background-color: #fefefe;
-  margin: 15% 0 15% 15%; /* 15% from the top and centered */
-  /*padding: 20px;*/
-  border: 1px solid #888;
+  border-bottom: none;
+  border-top: none;
+  margin: 0 15% 0 15%; /* 15% from the top and centered */
+
   width: 80%; /* Could be more or less, depending on screen size */
   padding-left: 45px;
+  padding-right: 45px;
 }
 
 /* The Close Button */
