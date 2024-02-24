@@ -106,9 +106,9 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/pencil.jpg" width={1920} height={1080} alt="pencil" />
-      <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/watch.jpg" width={1920} height={1080} alt="watch" />
-      <Image className="full-gallery" src="https://roush-image.s3.amazonaws.com/macro/quarter.jpg" width={1920} height={1080} alt="watch" />
+      <Image className="full-gallery" src="/macro-stock-1.png" width={1920} height={1080} alt="pencil" />
+      <Image className="full-gallery" src="/macro-stock-2.png" width={1920} height={1080} alt="watch" />
+      <Image className="full-gallery" src="/macro-stock-3.png" width={1920} height={1080} alt="watch" />
        <div
             className="gutter"
             style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}
@@ -124,11 +124,12 @@ export default function Index() {
               <h1 className="header-number-bullet preheader">01</h1>
               <h1 className="header-number header"> Quote</h1>
               {shouldShowModal && (
-                <div id="myModal" className="modal">
-                  <div className="modal-content">
-                    <span className="close" onClick={() => setShouldShowModal(false)}>&times;</span>
-                    <p>Get Started</p>
-                    <p>A basic package includes 5 high-resolution photos and post-production delivered to your inbox within 7 business days.</p>
+                <div id="myModal" className="modal" onClick={() => setShouldShowModal(false)}>
+                    <Image src="/modal.png" width={895} height={806} alt="watch" />
+                  {/*<div className="modal-content">*/}
+                  {/*  <span className="close" onClick={() => setShouldShowModal(false)}>&times;</span>*/}
+                  {/*  <p>Get Started</p>*/}
+                  {/*  <p>A basic package includes 5 high-resolution photos and post-production delivered to your inbox within 7 business days.</p>*/}
                     {/*<div>*/}
                     {/*  <div>*/}
                     {/*    <p>5</p>*/}
@@ -139,7 +140,7 @@ export default function Index() {
                     {/*  </div>*/}
                     {/*</div>*/}
                     {/*To add additional photos or video to your project, reach out directly for a custom quote to fit your needs.*/}
-                  </div>
+                  {/*</div>*/}
                 </div>
               )}
               <p className="paragraph">
